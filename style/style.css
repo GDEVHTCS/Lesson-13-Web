@@ -76,16 +76,22 @@ body {
 }
 .background-s1{
     width: 100%;
+    background-size: cover;
 }
 .s1-section-photo-div{
     position: relative;
     top: 100px;
 }
 .img-half-cover{
-    width: 300px;
-    height: 100px;
-    background-color: #000;
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    top: 0%;
+    background-color: #37393FE8;
+    opacity: 0.9,5;
+    filter: blur(4px);
 }
+ 
 /* responsive */
 
 @media (max-width:1500px) {
