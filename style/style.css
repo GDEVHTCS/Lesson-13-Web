@@ -7,7 +7,6 @@ body {
     top: 50px;
     width: 70%;
     margin: 0 auto;
-    border: 1px solid #000;
     z-index: 10000;
 }
 
@@ -74,24 +73,50 @@ body {
     display: none;
     cursor: pointer;
 }
-.background-s1{
+
+.background-s1 {
     width: 100%;
     background-size: cover;
 }
-.s1-section-photo-div{
+
+.s1-section-photo-div {
     position: relative;
     top: 100px;
 }
-.img-half-cover{
+
+.img-half-cover {
     position: absolute;
     width: 42%;
     height: 100%;
     top: 0%;
     background-color: #37393FE8;
-    opacity: 0.9,5;
-    filter: blur(4px);
+    opacity: 0.9, 5;
 }
- 
+
+.half-C-text-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: start;
+}
+
+.half-C-text:nth-child(1) {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+}
+
+.half-C-text:nth-child(2) {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110.00000000000001%;
+}
+
 /* responsive */
 
 @media (max-width:1500px) {
@@ -107,22 +132,64 @@ body {
     .li-s:nth-child(3),
     .li-s:nth-child(4),
     .li-s:nth-child(5),
-    .li-s:nth-child(6){
+    .li-s:nth-child(6) {
         display: none;
     }
 }
-@media (max-width:711px){
-    .li-s:nth-child(7){
+
+@media (max-width:711px) {
+    .li-s:nth-child(7) {
         display: none;
     }
-    .pages-form{
+
+    .pages-form {
         display: none;
     }
-    .burger-bar-div{
+
+    .burger-bar-div {
         display: unset;
     }
-    .header{
+
+    .header {
         width: 100%;
         padding: 5px;
+    }
+}
+@media (max-width:942px){
+    .half-C-text:nth-child(1){
+        font-size: 1.2rem;
+    }
+    .half-C-text:nth-child(2){
+        font-size: 3rem;
+    }
+}
+@media (max-width:756px) {
+    .half-C-text:nth-child(1){
+        font-size: 1rem;
+    }
+    .half-C-text:nth-child(2){
+        font-size: 2rem;
+    }
+}
+@media (max-width:530px){
+    .background-s1{
+        height: 200px;
+    }
+    .half-C-text:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .half-C-text:nth-child(1){
+        font-size: 0.80;
+        white-space: nowrap;
+    }
+}
+@media (max-width:403px){
+    .half-C-text:nth-child(1){
+        font-size: 100%;
+        white-space: unset;
+    }
+    .half-C-text:nth-child(2){
+        font-size: 100%;
+        margin-top: 20px;
     }
 }
